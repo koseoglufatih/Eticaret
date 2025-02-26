@@ -1,6 +1,4 @@
-﻿@model Product
-
-<div class="col mb-5">
+﻿<div class="col mb-5">
     <div class="card h-100">
         <!-- Sale badge-->
         <div class="badge position-absolute" style="top: 0.5rem; right: 0.5rem">
@@ -21,7 +19,7 @@
                 <!-- Product name-->
                 <h5 class="fw-bolder">@Model.Name</h5>
                 <!-- Product price-->
-                @Model.Price.ToString("c")
+                <span class="text-muted">@Model.Price.ToString("c")</span>
             </div>
         </div>
         <!-- Product actions-->

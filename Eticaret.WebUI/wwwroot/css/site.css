@@ -20,3 +20,47 @@ html {
 .dropdown:hover .dropdown-menu{
     display:block;
 }
+
+
+
+
+
+.card {
+    height: 100%; /* Tüm kartlarýn ayný yükseklikte olmasýný saðlar */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 250px; /* Görsellerin ayný boyutta olmasýný saðlar */
+    object-fit: cover; /* Görselin oranýný bozmadan kýrpmasýný saðlar */
+}
+
+.card-body {
+    flex-grow: 1; /* Ýçeriðin esnek olmasýný saðlar */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-footer {
+    margin-top: auto; /* Footer kýsmýnýn her zaman en altta kalmasýný saðlar */
+}
+
+/* Kampanyalar için */
+.news-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Sabit yükseklik */
+    overflow: hidden;
+    border-radius: 10px; /* Hafif oval köþeler */
+    background: #f8f9fa; /* Hafif gri arka plan */
+}
+
+    .news-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Görsellerin orantýlý görünmesi */
+        border-radius: 8px; /* Görselin köþelerini yuvarla */
+    }

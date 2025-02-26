@@ -26,7 +26,9 @@ namespace Eticaret.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // local db
-            optionsBuilder.UseSqlServer(@"Server=localhost; Database=ETicaret2025DB; Trusted_Connection=True; TrustServerCertificate=True;");
+            //optionsBuilder.UseSqlServer(@"Server=localhost; Database=ETicaret2025DB; Trusted_Connection=True; TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"data source=77.245.159.112; initial catalog=fkoseogl_db; User Id=fkoseogl_dbuser; Password=KqCZEh.b6dS9tfy; TrustServerCertificate=True");
+            //
 
             // free server
             //

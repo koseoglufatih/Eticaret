@@ -1,7 +1,5 @@
-﻿@model News
-
-<div class="col mb-5">
-    <a href="/News/Details/@Model.Id">
-        <img src="/Img/@Model.Image" alt="@Model.Name" class="img-fluid" />
+﻿<div class="col-md-3 col-sm-6 mb-4">
+    <a href="/News/Details/@Model.Id" class="news-card d-block p-1">
+        <img src="/Img/@Model.Image" alt="@Model.Name" class="img-fluid rounded">
     </a>
 </div>
